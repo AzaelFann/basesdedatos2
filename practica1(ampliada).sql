@@ -47,3 +47,12 @@ create table horario(
   constraint pk_id_horario primary key(id_horario),
   constraint fk1_id_pelicula foreign key(id_pelicula)references pelicula(id_pelicula)
                      );
+
+create table sala(
+  id_sala integer,
+  id_pelicula integer,
+  sala varchar(8),
+  constraint pk_id_sala primary key(id_sala),
+  constraint fk1_id_pelicula foreign key(id_pelicula)references pelicula(id_pelicula)
+                      );
+  
