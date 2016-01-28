@@ -57,7 +57,9 @@ create table sala(
                       );
   
 -- ejercicio 27 enero
+--crear una secuencia para la pelicula
 create sequence sec_pelicula
 star with 1
 increment by 1
-nona_value;
+nomaxvalue;
+
