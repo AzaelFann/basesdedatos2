@@ -56,3 +56,8 @@ create table sala(
   constraint fk1_id_pelicula foreign key(id_pelicula)references pelicula(id_pelicula)
                       );
   
+-- ejercicio 27 enero
+create sequence sec_pelicula
+star with 1
+increment by 1
+nona_value;
