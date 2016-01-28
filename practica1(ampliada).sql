@@ -1,3 +1,5 @@
+-- sql injection ese es el hacking mas dificil de erradicar
+
 --crearemos una tabla muy simple para probar el poder de ps/sql
 create table dance(id_dance integer, nombre varchar2(40), edad integer);
 
