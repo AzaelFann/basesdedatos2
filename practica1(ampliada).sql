@@ -65,3 +65,11 @@ star with 1
 increment by 1
 nomaxvalue;
 
+create or replace procedure hola_mundo nombre in varchar2;
+as
+begin
+--aqui va la logica
+
+dbms output.put.line 'HOLA COMO ESTAS' ||nombre;
+end
+/
