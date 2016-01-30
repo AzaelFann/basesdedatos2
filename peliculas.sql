@@ -28,3 +28,10 @@ begin
 hola_mundo ('Azael Fann')
 end;
 /
+
+declare
+valor number;
+begin
+suma(12, 8, valor);
+end;
+/
