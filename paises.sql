@@ -18,3 +18,18 @@ insert into paises values('bra','Brasil',230000000,'Portugues');
 SELECT * FROM paises;
 
 set serveroutput on;
+
+declare
+  cursor cur_paises is select *from paises;
+  total_hab integer;
+  
+begin
+total_hab:=0;
+for fila in cur_paises loop
+total_hab:=total_hab+fila.habitantes;
+dbms_output.put_line('nombre: '||fila.nombre||' habitantes: '||fila.habitantes);
+end loop;
+dbms_output.put_line('Habitantes de todos los paises: '||total_hab);
+end;
+/
+
