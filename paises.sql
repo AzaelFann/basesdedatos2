@@ -33,3 +33,27 @@ dbms_output.put_line('Habitantes de todos los paises: '||total_hab);
 end;
 /
 
+CREATE TABLE estudiante(id_estudiante integer,
+                        id_pais varchar(4),
+                        carrera varchar(30),
+                        edad integer,
+                        constraint pk_id_estudiante primary key(id_estudiante),
+                        constraint fk_id_pais foreign key(id_pais) references paises(id_pais)
+  );
+  
+  insert INTO estudiante VALUES(1,'mx','Sistemas Computacionales',25);
+  insert INTO estudiante VALUES(2,'usa','Telecomunicaciones',20);
+  insert INTO estudiante VALUES(3,'mx','Mecatronica',22);
+  insert INTO estudiante VALUES(4,'jpa','Robotica',24);
+  insert INTO estudiante VALUES(5,'mx','Ambiental',21);
+  insert INTO estudiante VALUES(6,'ger','Quimica',27);
+  insert INTO estudiante VALUES(7,'bra','Comercial',23);
+  
+  select * from estudiante;
+  
+  begin
+  dbms_output.put_line('Nombre del Pais','Habitantes','Carrera');
+  for fil in 
+  end;
+  /
+  
