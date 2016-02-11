@@ -16,3 +16,5 @@ insert into paises values('ger','Alemania',1400000000,'Aleman');
 insert into paises values('bra','Brasil',230000000,'Portugues');
 
 SELECT * FROM paises;
+
+set serveroutput on;
