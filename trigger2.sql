@@ -34,3 +34,4 @@ insert into registro_menores values (:new.id_reg, :new.nombre,
 end if;
 end;
 /
+
