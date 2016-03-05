@@ -22,7 +22,7 @@ constraint pk_id_reg_men primary key (id_reg_men));
 
 set serveroutput on;
 
-create or replace trigger respaldo_registro after insert into registro
+create or replace trigger respaldo_registro after insert on registro
 for each row
 begin
 if (new.edad) >= 18 then
